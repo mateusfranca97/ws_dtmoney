@@ -2,18 +2,15 @@ import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
     :root{
-        --background: #f0f2f5;
-        --red: #E52E4D;
-        --blue: #5429CC;
-        --green: #33CC95;
-        --blue-light: #6933FF;
-        --text-title: #363F5F;
-        --text-body: #969CB3;
-        --background: #F0F2F5;
-        --shape: #FFF;
+        --header-gradient: linear-gradient(180deg, rgba(196,196,196,1) 0%, rgba(196,196,196,0) 100%);
+        --text-title: #545454;
+        --orange: #E99D14;
+        /* --background-image: url('../assets/background.svg'); */
     }
 
     *{
+        /* border: 1px solid #000; */
+
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -30,7 +27,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body{
-        background:var(--background);
+        /* backgroundImage: var(--background-image) */
         -webkit-font-smoothing: antialiased;
     }
 
@@ -41,6 +38,7 @@ export const GlobalStyle = createGlobalStyle`
 
     h1, h2, h3, h4, h5, h6 ,strong {
         font-weight: 600;
+        font-family:'Barlow', sans-serif;
     }
 
     button{
