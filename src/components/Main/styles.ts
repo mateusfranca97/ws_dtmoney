@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Content = styled.main`
 
-    img{ 
+    .background{ 
         position: absolute;
         z-index: -99;
         bottom: 0px;
@@ -19,7 +19,21 @@ export const Content = styled.main`
 
     .middle-page{
         height: 100vh;
-        background: red;
+        color: #FFF;
+        background: rgb(12, 14, 27);
+
+        .description{
+            padding: 3.5rem 0rem 0rem 3rem;
+
+            display: flex;
+            justify-content:center;
+            align-items:center;
+
+            img{
+                padding-left: 6rem;
+                height: 18rem;
+            }
+        }
     }
 
     .footer-page{
