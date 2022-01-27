@@ -11,7 +11,6 @@ export const Button = styled.button`
     right: 20px;
 
     color: #fff;
-
     width: 250px;
     height: 40px;
 

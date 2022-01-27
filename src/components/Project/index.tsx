@@ -1,6 +1,6 @@
 import { Content } from "./styles";
 
-export function Location(){
+export function Project(){
     return(
         <Content>
             

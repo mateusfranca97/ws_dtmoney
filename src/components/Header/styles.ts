@@ -1,14 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.header`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
     max-height: 75px;
-
-    background: var(--header-gradient);
-
     padding: 1rem 0rem 1rem 6rem;
     
     img{
@@ -16,7 +9,6 @@ export const Container = styled.header`
     }
 
     .menu{
-        width: 45rem;
         padding: 0rem 5rem 0rem 0rem;
     }
 
@@ -32,6 +24,12 @@ export const Container = styled.header`
             transition: .2s;
             color: var(--orange)
         }
+    }
+
+    hr{
+        margin-top: 1rem;
+        width:100%; 
+        color: #fff;
     }
 `
 

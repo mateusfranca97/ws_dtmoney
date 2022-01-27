@@ -5,87 +5,111 @@ export const Content = styled.main`
     .background{ 
         position: absolute;
         z-index: -99;
-        bottom: 0px;
+        bottom: 10px;
         right: 0px;
-        filter: blur(5px);
+        left:-1px;
+        filter: brightness(0.5);
+    }
+
+    .group{
+        position: absolute; 
+        height:18rem;
+        z-index: 98;
+        top:32rem;
     }
 
     .begin-page{
-        height: 88.2vh; 
+        height: 88vh; 
         background: {backgroundMain};
         display: flex;
         color: #000;
+
+        .title{
+            width:100%;
+            padding: 10rem 0 0 6rem;
+
+            h1{
+                font-size: 4.5rem;
+            }
+
+            h1:nth-child(1){
+                font-family:lato;
+                color: #EEE;
+                font-weight: 400;
+            }
+
+            h1:nth-child(2){
+                margin-top:-10px;
+                font-family:lato;
+                font-weight: 600;
+                color: var(--orange);
+            }
+
+        }
+
+        .aside-media-social{
+            padding-top: 13rem;
+            width:5%;
+
+            i:nth-child(1){
+                margin-bottom: 10px;
+            }
+
+            i{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 3rem;
+
+            width: 44px;
+            height: 44px;
+
+            color: #FFF;
+
+                &:hover{
+                color: #fff;
+                transition: 1s;
+                background: var(--orange);
+                cursor: pointer;
+                }
+            }
+        }
+
+
     }
 
     .middle-page{
-        height: 100vh;
-        color: #FFF;
-        background: rgb(12, 14, 27);
+        height: 150vh;
+        color: #FFF;    
+        background: linear-gradient(10deg, rgba(32,32,32,0) 0%, rgba(32,32,32,1) 100%); 
 
-        .description{
-            padding: 3.5rem 0rem 0rem 3rem;
-
+        h1{
             display: flex;
-            justify-content:center;
-            align-items:center;
+            justify-content: center;
 
-            img{
-                padding-left: 6rem;
-                height: 18rem;
-            }
+            padding-top: 2rem;
+            font-size: 3rem;
+        }
+
+        .project-list{
+            display: grid;
+            justify-content: center;
+            
+            grid-template-columns: repeat(auto-fill, 300px);
+            gap: 3rem;
+
+            padding-top: 2rem;
+            
         }
     }
 
     .footer-page{
-        height: 40vh;
+        height: 45vh;
         background: blue;
     }
 
-    .title{
-        width:100%;
-        padding: 10rem 0 0 3rem;
-
-        h1{
-            font-size: 3.5rem;
-        }
-
-        h1:nth-child(1){
-            color: var(--text-title)
-        }
-
-        h1:nth-child(2){
-            color: var(--orange);
-        }
+    @media (min-width: 707px){
 
     }
-    
-    .aside-media-social{
-        padding-top: 13rem;
-        width:5%;
-
-        i:nth-child(1){
-            margin-bottom: 10px;
-        }
-    }
-
-    i{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        width: 33px;
-        height: 33px;
-
-        color: #FFF;
-
-        &:hover{
-        color: #fff;
-        transition: .2s;
-        border-radius: 4px;
-        background: var(--orange);
-        cursor: pointer;
-        }
-    }
-
-    
+        
 `
